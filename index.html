@@ -14,17 +14,29 @@
         <div class="content">
             <div class="flex">
                 <p>intentos:</p>
-                <input type="number" value="30">
-                <a class="boton" href="javascript:void(0)">cambiar</a>
+                <input id="intentos" type="number">
+            </div>
+            <div class="flex">
+                <p>puertas:</p>
+                <input id="num_puertas" type="number" min="3">
             </div>
 
+            <div class="flex">
+                <p>Monty abre:</p>
+                <input id="puertasabiertas" type="number" min="1">
+                <p>puertas</p>
+            </div>
+            <div class="flex">
+                <a class="boton" href="javascript:void(0)">cambiar</a>
+            </div>
             <p id="quedando"></p>
             <p id="cambiando"></p>
             <div id="puertas"></div>
-            <p>x=puerta abierta</p>
-            <p>o=puerta elegida</p>
-            <p>2=premio</p>
-            <p>(si no aparece el premio, es que esta en la puerta elegida)</p>
+            <div class="texto">
+                <p>x=puerta abierta, o=puerta elegida, p=premio</p>
+                <p>(si no aparece el premio, es que esta en la puerta elegida)</p>
+            </div>
+
         </div>
     </div>
     <script src="jsFunctions.js"></script>
